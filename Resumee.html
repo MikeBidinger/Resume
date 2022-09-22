@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root {
+  --white: #DDDDDD;
+  --green: #04AA6D;
+  --gray: #38444D;
+  --back: #15202B;
+  --dark: #0D1721;
+  --text: #CCCCCC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: var(--back);
+}
+
+#nav1 {display: none;}
+#nav3 {display: none;}
+#nav4 {display: none;}
+#nav6 {display: none;}
+#nav7 {display: none;}
+#nav8 {display: none;}
+
+/* Header Title */
+.header {
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  text-shadow: 1px 1px 2px black, 0 0 35px var(--green);
+  /* text-shadow: 5px 5px 10px #04AA6D; */
+}
+
+/* Style the top navigation bar */
+.topnav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: var(--dark);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--green);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  color: black;
+  background-color: var(--green);
+}
+
+/* Links */
+a:link {
+  color: var(--white)
+}
+a:visited {
+  color: var(--white)
+}
+a:hover {
+  color: var(--green)
+}
+a:active {
+  color: red
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--dark);
+  border-radius: 0 0 15px 15px;
+  box-shadow: -5px 5px 10px var(--green);
+}
+
+.leftcolumn h3 {
+  border-bottom: 2px solid var(--green);
+  text-shadow: 1px 1px 2px black, 0 0 15px var(--green);
+}
+
+.leftcolumn i {
+  float: right;
+  /* font-size: 20px; */
+}
+
+.leftcolumn p:hover {
+  color: white;
+  cursor: default;
+  text-shadow: 1px 1px 2px black, 0 0 15px var(--green);
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 100%;
+  color: white;
+}
+
+.rightcolumn p {
+  color: var(--text);
+}
+
+.rightcolumn h2 {
+  text-shadow: 1px 1px 2px black, 0 0 25px var(--green);
+}
+
+.rightcolumn h4 {
+  padding-top: 15px;
+  border-top: 2px solid var(--green);
+}
+
+p.job_title {
+  font-style: italic;
+  font-weight: bold;
+}
+
+p.job_desc {
+  font-weight: normal;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: var(--gray);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.leftcard {
+  background-color: var(--dark);
+  padding: 30px 20px 0;
+  margin-top: 20px;
+}
+
+.rightcard {
+  background-color: var(--gray);
+  padding: 30px 20px 15px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px var(--green);
+}
+
+.rightcard:hover {
+  background-color: var(--dark);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Contact footer */
+.contact {
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--dark);
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px var(--green);
+}
+
+/* Responsive layout - Mobile First */
+
+/* Tablet: */
+@media screen and (min-width: 600px) {
+  .leftcolumn {width: 25%;}
+  .rightcolumn {width: 75%; padding-left: 20px;}
+  #nav1 {display: block;}
+}
+
+/* Desktop: */
+@media screen and (min-width: 1200px) {
+  .leftcolumn {width: 25%;}
+  .rightcolumn {width: 75%; padding-left: 20px;}
+  #nav1 {display: block;}
+  #nav3 {display: block;}
+  #nav4 {display: block;}
+  #nav6 {display: block;}
+  #nav7 {display: block;}
+  #nav8 {display: block;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Mike Bidinger</h1>
+</div>
+
+<div class="topnav">
+  <a href="#" id="nav1">Home</a>
+  <a href="#Personal" id="nav2">Personalia</a>
+  <a href="#Lang" id="nav3">Languages</a>
+  <a href="#Skill" id="nav4">Skills</a>
+  <a href="#About" id="nav5">About Me</a>
+  <a href="#Experience" id="nav6">Work Experience</a>
+  <a href="#Edu" id="nav7">Education</a>
+  <a href="#Course" id="nav8">Courses</a>
+  <a href="#Contact" id="nav9">Contact</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <!-- <div class="fakeimg" style="height:300px;">My Photo</div> -->
+    <div id="Personal" class="leftcard">
+      <h3>Personalia</h3>
+      <p><a href="https://www.google.nl/maps/place/Burgemeester+Luytenstraat+12,+6151+GG+Munstergeleen/"><i class="material-icons" style="float: left; margin-right: 15px;">location_on</i>Burg. Luytenstraat 12, 6151 GG, Munstergeleen</a></p>
+      <p><a href="mailto:mike-bidinger@hotmail.com"><i class="material-icons" style="float: left; margin-right: 15px;">mail</i>mike-bidinger@hotmail.com</a></p>
+      <p><a href="tel://0641094963/"><i class="material-icons" style="float: left; margin-right: 15px;">call</i>06-41094963</a></p>
+      <p><i class="material-icons" style="float: left; margin-right: 15px;">calendar_month</i>1990-12-22</p>
+      <p><i class="material-icons" style="float: left; margin-right: 15px;">language</i>Netherlands</p>
+    </div>
+    <div id="Lang" class="leftcard"></div>
+    <div id="Skill" class="leftcard"></div>
+  </div>
+  <div class="rightcolumn">
+    <div id="About" class="rightcard">
+      <h2>About Me</h2>
+      <p id="About"></p>
+    </div>
+    <div id="Experience" class="rightcard"></div>
+    <div id="Edu" class="rightcard"></div>
+    <div id="Course" class="rightcard"></div>
+  </div>
+</div>
+
+<div id="Contact" class="contact">
+  <h2>Contact
+    <p>
+      <a href="mailto:mike-bidinger@hotmail.com"><i class="material-icons" style="margin-right: 15px;">mail</i>mike-bidinger@hotmail.com</a>
+      <a href="tel://0641094963/"><i class="material-icons" style="margin-right: 15px;">call</i>06-41094963</a>
+    </p>
+  </h2>
+</div>
+
+<script>
+  const setting_language = "EN"
+  const languages = {"NL": 5, "EN": 4, "DE": 4};
+  const skill = {
+    "MS VBA": 5,
+    "Python": 4,
+    "MS Office": 4,
+    "Qlik Sense": 4,
+    "HTML": 3,
+    "CSS": 3,
+    "Mendix": 3,
+    "VBScripting": 3,
+    "Viscom": 3,
+    "EDIABAS": 3,
+    "JavaScript": 2,
+    "SQL": 2,
+    "MS Visual C++": 2,
+    "MS Visual Basic": 2,
+    "MS Visual C#": 2,
+    "SAP": 2,
+    "LabView": 1
+  };
+  const about = {
+    "EN": `A true analyst. Through an extensive perseverance and technical insight,
+          I can be described as a true problem solver that is always capable of thinking
+          outside of the box. In addition, I like to challenge myself to new insights
+          and I am continuously on a journey to develop my knowledge and skills.
+          My ambition is therefore the search for improvements and optimizations,
+          as well as providing accurate information to business units through
+          transforming data into information.`,
+    "NL": `Een ware analyticus. D.m.v. een groot doorzettingsvermogen en technisch
+          inzicht, ben ik te omschrijven als een “problemsolver” die altijd in staat
+          is “out of the box” te denken. Daarbij daag ik mezelf graag uit voor
+          vernieuwde inzichten en ben ik continue bezig met de doorontwikkeling van
+          mijn kennis en kunde. Mijn ambitie is dan ook de zoektocht naar verbeteringen
+          en optimalisaties, d.m.v. data tot informatie te verwerken.`
+  };
+  const jobs = {
+    "VDL Nedcar, Born, feb 2018 - present": {
+      "title": "BDQS (Launch and Change Control, Supply)",
+      "desc_en": `Product data management specialist and responsible for providing
+                  the business with accurate information by transforming data into
+                  information (front-end). In addition, also responsible for the
+                  product data quality by applying algorithmic checks (back-end).`,
+      "desc_nl": `Specialist in product data management en zorgdrager om data te
+                  transformeren naar informatie voor de business.`
+    },
+    "VDL Nedcar, Born, dec 2017 - feb 2018": {
+      "title": "Change Controller E/E (Launch and Change Control, Supply)",
+      "desc_en": `Responsible for the validation, implementation and processing of
+                  engineering changes to the product(s). In addition, a
+                  hardware/software implementation specialist.`,
+      "desc_nl": `Valideren, implementeren en verwerken van product wijzigingen
+                  t.b.v. de ontwikkeling van het product.`
+    },
+    "VDL Nedcar, Born, jan 2017 - dec 2017": {
+      "title": "SQA Line Complaints E/E (Supplier Quality Assurance)",
+      "desc_en": `Production disruption support through product quality issues and when
+                  the cause is determined to by supplier related (after analysis),
+                  complaint costs to the relevant supplier. In addition, responsible
+                  for updating of software components as a result of engineering changes
+                  to the product(s), as well as providing support to the “Rework and
+                  Repair” department with the product defect analysis of software
+                  components.`,
+      "desc_nl": `Ondersteuning bij productie verstoringen d.m.v. product
+                  kwaliteitsproblemen en bij vaststelling van leveranciersoorzaken
+                  (na analyse), dit door reclameren richting desbetreffende leverancier.
+                  Eveneens zorgdragen voor elektronische producten die geüpdatet
+                  (herprogrammeerd) moeten worden als gevolg van productwijzigingen.
+                  Daarbij ook analyseondersteuning bieden aan Rework & Repair bij
+                  product defecten, wederom bij vaststelling van leveranciersoorzaken
+                  door reclameren richting desbetreffende leverancier.`
+    },
+    "Prodrive Technologies, Son, Science Park Eindhoven, aug 2012 - jan 2017": {
+      "title": "Work Preparator, Test Engineer (SMD Assembly)",
+      "desc_en": `Responsible for the quality checks through visual test equipment and
+                  programming as well as optimizing the SMD production processes through
+                  problem analysis (quality- and efficiency improvements). In addition,
+                  responsible as a work preparator to ensure a high quality and
+                  efficiency standard to the start of production for the SMD production
+                  processes of new products.`,
+      "desc_nl": `Kwaliteitscontroles middels optische testmachines en testprogrammatuur
+                  en optimaliseren van de SMD productieprocessen middels probleemanalyses
+                  (kwaliteit- en efficiëntieverbeteringen). Bij nieuwe producten de
+                  benodigde voorbereidingen treffen voor een zo goed mogelijke
+                  productiestart.`
+    }
+  };
+  const edu = {
+    "Bachelor (HBO) Electrical Engineering": {
+      "en": `2008 - 2012, Hogeschool Zuyd, Heerlen, 
+            Graduated: Yes/<span style="text-decoration: line-through;">No</span>`,
+      "nl": `2008 - 2012, Hogeschool Zuyd, Heerlen,
+            Diploma behaald: Ja/<span style="text-decoration: line-through;">Nee</span>`
+    }
+  };
+  const course = [
+    `2022 - Qlik Sense Developer`,
+    `2020 - Qlik Sense Front End Developer`,
+    `2019 - Mendix Rapid Developer`,
+    `2016 - Viscom Release Training`,
+    `2012 - Viscom Basic Training`
+  ];
+
+  document.getElementById("Lang").innerHTML = myRating(languages, `<h3>Languages</h3>`);
+  document.getElementById("Skill").innerHTML = myRating(skill, `<h3>Skills</h3>`);
+
+  let html_about = `<h2>About Me</h2><p>`
+  if (setting_language == "EN") {
+    document.getElementById("About").innerHTML = html_about + about.EN + `</p>`;
+  } else if (setting_language == "NL") {
+    document.getElementById("About").innerHTML = html_about + about.NL + `</p>`;
+  }
+
+  document.getElementById("Experience").innerHTML = myWorkExperience(jobs, `<h2>Work Experience`, `</h2>`);
+
+  document.getElementById("Edu").innerHTML = myEducation(edu, `<h2>Eductaion`, `</h2>`);
+
+  document.getElementById("Course").innerHTML = myCourses(course, `<h2>Courses</h2>`);
+
+  function myRating (objVar, preHeader) {
+    let html = preHeader;
+    for (let x in objVar) {
+      html += `<p>${x}`;
+      for (let i = 0; i < objVar[x]; i++) {
+        html += `<i class="material-icons">radio_button_checked</i>`;
+      }
+      for (let i = objVar[x]; i < 5; i++) {
+        html += `<i class="material-icons">radio_button_unchecked</i>`;
+      }
+      html += `</p>`;
+    }
+    return html;
+  }
+
+  function myWorkExperience(objVar, preHeader, sufHeader) {
+    let html = preHeader;
+    for (let x in objVar) {
+      html += `<h4>${x}`;
+      html += `<p class="job_title">${objVar[x]["title"]}</p>`;
+      if (setting_language == "EN") {
+        html += `<p class="job_desc">${objVar[x]["desc_en"]}</p>`;
+      } else if (setting_language == "NL") {
+        html += `<p class="job_desc">${objVar[x]["desc_nl"]}</p>`;
+      }
+      html += `</h4>`;
+    }
+    html += sufHeader;
+    return html;
+  }
+
+  function myEducation(objVar, preHeader, sufHeader) {
+    let html = preHeader;
+    for (let x in objVar) {
+      html += `<h4>${x}`;
+      if (setting_language == "EN") {
+        html += `<p>${objVar[x]["en"]}</p>`;
+      } else if (setting_language == "NL") {
+        html += `<p>${objVar[x]["nl"]}</p>`;
+      }
+      html += `</h4>`;
+    }
+    html += sufHeader;
+    return html;
+  }
+
+  function myCourses(arrVar, preHeader) {
+    let html = preHeader;
+    for (let i=0; i<arrVar.length; i++) {
+      html += `<p>` + arrVar[i] + `</p>`
+    }
+    return html;
+  }
+
+</script>
+
+</body>
+</html>
