@@ -43,6 +43,62 @@ body {
   /* text-shadow: 5px 5px 10px #04AA6D; */
 }
 
+/* Language selection */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: var(--green);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  min-width: 150px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--white);
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--green);
+}
+
+.button {
+  border: none;
+  color: var(--white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  min-width: 146px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
 /* Style the top navigation bar */
 .topnav {
   display: flex;
@@ -209,20 +265,28 @@ p.job_desc {
 </head>
 <body>
 
+<div class="dropdown" style="float: right;">
+  <button class="dropbtn">Language</button>
+  <div class="dropdown-content" style="left: 0;">
+  <button class="button" onclick="setUp('EN')">EN</button>
+  <button class="button" onclick="setUp('NL')">NL</button>
+  </div>
+</div>
+
 <div class="header">
   <h1>Mike Bidinger</h1>
 </div>
 
 <div class="topnav">
-  <a href="#" id="nav1">Home</a>
-  <a href="#Personal" id="nav2">Personalia</a>
-  <a href="#Lang" id="nav3">Languages</a>
-  <a href="#Skill" id="nav4">Skills</a>
-  <a href="#About" id="nav5">About Me</a>
-  <a href="#Experience" id="nav6">Work Experience</a>
-  <a href="#Edu" id="nav7">Education</a>
-  <a href="#Course" id="nav8">Courses</a>
-  <a href="#Contact" id="nav9">Contact</a>
+  <a href="#" id="nav1"></a>
+  <a href="#Personal" id="nav2"></a>
+  <a href="#Lang" id="nav3"></a>
+  <a href="#Skill" id="nav4"></a>
+  <a href="#About" id="nav5"></a>
+  <a href="#Experience" id="nav6"></a>
+  <a href="#Edu" id="nav7"></a>
+  <a href="#Course" id="nav8"></a>
+  <a href="#Contact" id="nav9"></a>
 </div>
 
 <div class="row">
@@ -230,7 +294,9 @@ p.job_desc {
     <!-- <div class="fakeimg" style="height:300px;">My Photo</div> -->
     <div id="Personal" class="leftcard">
       <h3>Personalia</h3>
+      <p><a href="https://www.google.nl/maps/place/Burgemeester+Luytenstraat+12,+6151+GG+Munstergeleen/"><i class="material-icons" style="float: left; margin-right: 15px;">location_on</i>Burg. Luytenstraat 12, 6151 GG, Munstergeleen</a></p>
       <p><a href="mailto:mike-bidinger@hotmail.com"><i class="material-icons" style="float: left; margin-right: 15px;">mail</i>mike-bidinger@hotmail.com</a></p>
+      <p><a href="tel://0641094963/"><i class="material-icons" style="float: left; margin-right: 15px;">call</i>06-41094963</a></p>
       <p><i class="material-icons" style="float: left; margin-right: 15px;">calendar_month</i>1990-12-22</p>
       <p><i class="material-icons" style="float: left; margin-right: 15px;">language</i>Netherlands</p>
     </div>
@@ -239,7 +305,7 @@ p.job_desc {
   </div>
   <div class="rightcolumn">
     <div id="About" class="rightcard">
-      <h2>About Me</h2>
+      <h2></h2>
       <p id="About"></p>
     </div>
     <div id="Experience" class="rightcard"></div>
@@ -252,12 +318,38 @@ p.job_desc {
   <h2>Contact
     <p>
       <a href="mailto:mike-bidinger@hotmail.com"><i class="material-icons" style="margin-right: 15px;">mail</i>mike-bidinger@hotmail.com</a>
+      <a href="tel://0641094963/"><i class="material-icons" style="margin-right: 15px;">call</i>06-41094963</a>
     </p>
   </h2>
 </div>
 
 <script>
-  const setting_language = "EN"
+  "use strict";
+  let default_language = "EN"
+  const menus = {
+    "EN": [
+      "Home",
+      "Personalia",
+      "Languages",
+      "Skills",
+      "About Me",
+      "Work Experience",
+      "Education",
+      "Courses",
+      "Contact"
+    ],
+    "NL": [
+      "Home",
+      "Personalia",
+      "Talen",
+      "Vaardigheden",
+      "Over Mijzelf",
+      "Werkervaring",
+      "Opleiding",
+      "Cursussen",
+      "Contact"
+    ]
+  }
   const languages = {"NL": 5, "EN": 4, "DE": 4};
   const skill = {
     "MS VBA": 5,
@@ -279,76 +371,108 @@ p.job_desc {
     "LabView": 1
   };
   const about = {
-    "EN": `A true analyst. Through an extensive perseverance and technical insight,
-          I can be described as a true problem solver that is always capable of thinking
-          outside of the box. In addition, I like to challenge myself to new insights
-          and I am continuously on a journey to develop my knowledge and skills.
-          My ambition is therefore the search for improvements and optimizations,
-          as well as providing accurate information to business units through
-          transforming data into information.`,
-    "NL": `Een ware analyticus. D.m.v. een groot doorzettingsvermogen en technisch
-          inzicht, ben ik te omschrijven als een “problemsolver” die altijd in staat
-          is “out of the box” te denken. Daarbij daag ik mezelf graag uit voor
-          vernieuwde inzichten en ben ik continue bezig met de doorontwikkeling van
-          mijn kennis en kunde. Mijn ambitie is dan ook de zoektocht naar verbeteringen
-          en optimalisaties, d.m.v. data tot informatie te verwerken.`
+    "EN": `A true analyst. Through an extensive perseverance and technical insight, 
+          I can be described as a true problem solver that is always capable of 
+          thinking outside of the box. In addition, I like to challenge myself to 
+          new insights and I am continuously on a journey to develop my knowledge 
+          and skills. My ambition is therefore the search for improvements and 
+          optimizations, as well as providing accurate information to business units 
+          by transforming data into information.`,
+    "NL": `Een ware analyticus. M.b.v. een groot doorzettingsvermogen en technisch 
+          inzicht, ben ik te omschrijven als een echte “problemsolver” die altijd in 
+          staat is “out of the box” te denken. Daarbij daag ik mezelf graag uit voor 
+          vernieuwde inzichten en ben ik continue bezig met de doorontwikkeling van 
+          mijn kennis en kunde. Mijn ambitie is dan ook de zoektocht naar verbeteringen 
+          en optimalisaties, alsook het bieden van kwalitatieve informatie naar de 
+          business d.m.v. data te transformeren naar informatie.`
   };
-  const jobs = {
-    "VDL Nedcar, Born, feb 2018 - present": {
-      "title": "BDQS (Launch and Change Control, Supply)",
-      "desc_en": `Product data management specialist and responsible for providing
-                  the business with accurate information by transforming data into
-                  information (front-end). In addition, also responsible for the
-                  product data quality by applying algorithmic checks (back-end).`,
-      "desc_nl": `Specialist in product data management en zorgdrager om data te
-                  transformeren naar informatie voor de business.`
-    },
-    "VDL Nedcar, Born, dec 2017 - feb 2018": {
-      "title": "Change Controller E/E (Launch and Change Control, Supply)",
-      "desc_en": `Responsible for the validation, implementation and processing of
-                  engineering changes to the product(s). In addition, a
-                  hardware/software implementation specialist.`,
-      "desc_nl": `Valideren, implementeren en verwerken van product wijzigingen
-                  t.b.v. de ontwikkeling van het product.`
-    },
-    "VDL Nedcar, Born, jan 2017 - dec 2017": {
-      "title": "SQA Line Complaints E/E (Supplier Quality Assurance)",
-      "desc_en": `Production disruption support through product quality issues and when
-                  the cause is determined to by supplier related (after analysis),
-                  complaint costs to the relevant supplier. In addition, responsible
-                  for updating of software components as a result of engineering changes
-                  to the product(s), as well as providing support to the “Rework and
-                  Repair” department with the product defect analysis of software
-                  components.`,
-      "desc_nl": `Ondersteuning bij productie verstoringen d.m.v. product
-                  kwaliteitsproblemen en bij vaststelling van leveranciersoorzaken
-                  (na analyse), dit door reclameren richting desbetreffende leverancier.
-                  Eveneens zorgdragen voor elektronische producten die geüpdatet
-                  (herprogrammeerd) moeten worden als gevolg van productwijzigingen.
-                  Daarbij ook analyseondersteuning bieden aan Rework & Repair bij
-                  product defecten, wederom bij vaststelling van leveranciersoorzaken
-                  door reclameren richting desbetreffende leverancier.`
-    },
-    "Prodrive Technologies, Son, Science Park Eindhoven, aug 2012 - jan 2017": {
-      "title": "Work Preparator, Test Engineer (SMD Assembly)",
-      "desc_en": `Responsible for the quality checks through visual test equipment and
-                  programming as well as optimizing the SMD production processes through
-                  problem analysis (quality- and efficiency improvements). In addition,
-                  responsible as a work preparator to ensure a high quality and
-                  efficiency standard to the start of production for the SMD production
-                  processes of new products.`,
-      "desc_nl": `Kwaliteitscontroles middels optische testmachines en testprogrammatuur
-                  en optimaliseren van de SMD productieprocessen middels probleemanalyses
-                  (kwaliteit- en efficiëntieverbeteringen). Bij nieuwe producten de
-                  benodigde voorbereidingen treffen voor een zo goed mogelijke
-                  productiestart.`
-    }
-  };
+  const jobs = new Map([
+    [4, {
+      "EN": {
+        "job": "VDL Nedcar, Born, feb 2018 - present",
+        "title": "BDQS (Launch and Change Control, Supply)",
+        "desc": `Product data management specialist and responsible for providing the 
+                business with accurate information by transforming data into information 
+                (front-end). In addition, also responsible for the product data quality 
+                by applying algorithmic checks (back-end).`
+      },
+      "NL": {
+        "job": "VDL Nedcar, Born, feb 2018 - heden",
+        "title": "BDQS (Launch and Change Control, Supply)",
+        "desc": `Specialist in product data management en verantwoordelijk van het 
+                voorzien van accurate informatie naar de business door data te 
+                transformeren naar informatie (front-end). Eveneens verantwoordelijk 
+                voor de kwaliteit van de product data d.m.v. algoritmische controles 
+                (back-end).`
+      }
+    }],
+    [3, {
+      "EN": {
+        "job": "VDL Nedcar, Born, dec 2017 - feb 2018",
+        "title": "Change Controller E/E (Launch and Change Control, Supply)",
+        "desc": `Responsible for the validation, implementation and processing of 
+                engineering changes to the product(s). In addition, a hardware/software 
+                implementation specialist.`
+      },
+      "NL": {
+        "job": "VDL Nedcar, Born, dec 2017 - feb 2018",
+        "title": "Change Controller E/E (Launch and Change Control, Supply)",
+        "desc": `Verantwoordelijk voor het valideren, implementeren en verwerken van 
+                product wijzigingen t.b.v. de ontwikkeling van het product. Additioneel 
+                specialist op het gebied van hardware/software implementaties.`
+      }
+    }],
+    [2, {
+      "EN": {
+        "job": "VDL Nedcar, Born, jan 2017 - dec 2017",
+        "title": "SQA Line Complaints E/E (Supplier Quality Assurance)",
+        "desc": `Production disruption support through product quality issues and when 
+                the cause is determined to by supplier related (after analysis), 
+                complaint costs to the relevant supplier. In addition, responsible for 
+                updating software components as a result of engineering changes to the 
+                product(s), as well as providing support to the “Rework and Repair” 
+                department with the product defect analysis of software components.`
+      },
+      "NL": {
+        "job": "VDL Nedcar, Born, jan 2017 - dec 2017",
+        "title": "SQA Line Complaints E/E (Supplier Quality Assurance)",
+        "desc": `Ondersteuning bij productie verstoringen d.m.v. product 
+                kwaliteitsproblemen en bij vaststelling van leveranciersoorzaken 
+                (na analyse), dit door reclameren richting desbetreffende leverancier. 
+                Eveneens verantwoordelijk het updaten van elektronische producten 
+                (herprogrammering) als gevolg van engineeringswijzigingen op het product 
+                (of producten). Daarbij ook analyseondersteuning aan de afdeling “Rework 
+                & Repair” bij product defectanalyse van software componenten.`
+      }
+    }],
+    [1, {
+      "EN": {
+        "job": "Prodrive Technologies, Son, Science Park Eindhoven, aug 2012 - jan 2017",
+        "title": "Work Preparator, Test Engineer (SMD Assembly)",
+        "desc": `Responsible for the quality checks through visual test equipment and 
+                programming as well as optimizing the SMD production processes through 
+                problem analysis (quality- and efficiency improvements). In addition, 
+                responsible as a work preparator to ensure a high quality and efficiency 
+                standard to the start of production for the SMD production processes of 
+                new products.`
+      },
+      "NL": {
+        "job": "Prodrive Technologies, Son, Science Park Eindhoven, aug 2012 - jan 2017",
+        "title": "Work Preparator, Test Engineer (SMD Assembly)",
+        "desc": `Verantwoordelijk voor de kwaliteitscontroles middels optische 
+                testmachines en testprogrammatuur en optimaliseren van de SMD 
+                productieprocessen middels probleemanalyses (kwaliteit- en 
+                efficiëntieverbeteringen). Eveneens verantwoordelijk als Work Preperator 
+                voor een hoge kwaliteit en efficiëntie standaard bij de productiestart 
+                voor de SMD productie processen van nieuwe producten.`
+      }
+    }]
+  ]);
   const edu = {
     "Bachelor (HBO) Electrical Engineering": {
-      "en": `2008 - 2012, Hogeschool Zuyd, Heerlen, 
+      "EN": `2008 - 2012, Hogeschool Zuyd, Heerlen, 
             Graduated: Yes/<span style="text-decoration: line-through;">No</span>`,
-      "nl": `2008 - 2012, Hogeschool Zuyd, Heerlen,
+      "NL": `2008 - 2012, Hogeschool Zuyd, Heerlen,
             Diploma behaald: Ja/<span style="text-decoration: line-through;">Nee</span>`
     }
   };
@@ -360,21 +484,39 @@ p.job_desc {
     `2012 - Viscom Basic Training`
   ];
 
-  document.getElementById("Lang").innerHTML = myRating(languages, `<h3>Languages</h3>`);
-  document.getElementById("Skill").innerHTML = myRating(skill, `<h3>Skills</h3>`);
+  setUp(default_language);
 
-  let html_about = `<h2>About Me</h2><p>`
-  if (setting_language == "EN") {
-    document.getElementById("About").innerHTML = html_about + about.EN + `</p>`;
-  } else if (setting_language == "NL") {
-    document.getElementById("About").innerHTML = html_about + about.NL + `</p>`;
+  function setUp(setting_language) {
+    let html = ``;
+    // Navigation Bar
+    document.getElementById("nav1").innerHTML = menus[setting_language][0]
+    document.getElementById("nav2").innerHTML = menus[setting_language][1]
+    document.getElementById("nav3").innerHTML = menus[setting_language][2]
+    document.getElementById("nav4").innerHTML = menus[setting_language][3]
+    document.getElementById("nav5").innerHTML = menus[setting_language][4]
+    document.getElementById("nav6").innerHTML = menus[setting_language][5]
+    document.getElementById("nav7").innerHTML = menus[setting_language][6]
+    document.getElementById("nav8").innerHTML = menus[setting_language][7]
+    document.getElementById("nav9").innerHTML = menus[setting_language][8]
+    // Languages
+    document.getElementById("Lang").innerHTML = myRating(
+      languages, `<h3>${menus[setting_language][2]}</h3>`);
+    // Skills
+    document.getElementById("Skill").innerHTML = myRating(
+      skill, `<h3>${menus[setting_language][3]}</h3>`);
+    // About Me
+    document.getElementById("About").innerHTML = 
+      `<h2>${menus[setting_language][4]}</h2><p>` + about[setting_language] + `</p>`;
+    // Work Experience
+    document.getElementById("Experience").innerHTML = myWorkExperience(
+      jobs, setting_language, `<h2>${menus[setting_language][5]}`, `</h2>`);
+    // Education
+    document.getElementById("Edu").innerHTML = myEducation(
+      edu, setting_language, `<h2>${menus[setting_language][6]}`, `</h2>`);
+    // Courses
+    document.getElementById("Course").innerHTML = myCourses(
+      course, `<h2>${menus[setting_language][7]}</h2>`);
   }
-
-  document.getElementById("Experience").innerHTML = myWorkExperience(jobs, `<h2>Work Experience`, `</h2>`);
-
-  document.getElementById("Edu").innerHTML = myEducation(edu, `<h2>Eductaion`, `</h2>`);
-
-  document.getElementById("Course").innerHTML = myCourses(course, `<h2>Courses</h2>`);
 
   function myRating (objVar, preHeader) {
     let html = preHeader;
@@ -391,31 +533,23 @@ p.job_desc {
     return html;
   }
 
-  function myWorkExperience(objVar, preHeader, sufHeader) {
+  function myWorkExperience(mapVar, setting_language, preHeader, sufHeader) {
     let html = preHeader;
-    for (let x in objVar) {
-      html += `<h4>${x}`;
-      html += `<p class="job_title">${objVar[x]["title"]}</p>`;
-      if (setting_language == "EN") {
-        html += `<p class="job_desc">${objVar[x]["desc_en"]}</p>`;
-      } else if (setting_language == "NL") {
-        html += `<p class="job_desc">${objVar[x]["desc_nl"]}</p>`;
-      }
+    mapVar.forEach (function(value, key) {
+      html += `<h4>${value[setting_language]["job"]}`;
+      html += `<p class="job_title">${value[setting_language]["title"]}</p>`;
+      html += `<p class="job_desc">${value[setting_language]["desc"]}</p>`;
       html += `</h4>`;
-    }
+    })
     html += sufHeader;
     return html;
   }
 
-  function myEducation(objVar, preHeader, sufHeader) {
+  function myEducation(objVar, setting_language, preHeader, sufHeader) {
     let html = preHeader;
     for (let x in objVar) {
       html += `<h4>${x}`;
-      if (setting_language == "EN") {
-        html += `<p>${objVar[x]["en"]}</p>`;
-      } else if (setting_language == "NL") {
-        html += `<p>${objVar[x]["nl"]}</p>`;
-      }
+      html += `<p>${objVar[x][setting_language]}</p>`;
       html += `</h4>`;
     }
     html += sufHeader;
@@ -424,8 +558,8 @@ p.job_desc {
 
   function myCourses(arrVar, preHeader) {
     let html = preHeader;
-    for (let i=0; i<arrVar.length; i++) {
-      html += `<p>` + arrVar[i] + `</p>`
+    for (let x of arrVar) {
+      html += `<p>${x}</p>`;
     }
     return html;
   }
