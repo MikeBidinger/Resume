@@ -10,7 +10,7 @@
             "tag": "div",
             "MyPhoto": {
                 "tag": "img",
-                "src": "ttps://github.com/MikeBidinger/Resume/blob/main/img/PhotoMe.jpg?raw=true",
+                "src": "https://raw.githubusercontent.com/MikeBidinger/Resume/main/img/PhotoMe.jpg",
                 "alt": "My Photo"
             },
             "Personal": {
