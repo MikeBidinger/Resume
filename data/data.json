@@ -1,0 +1,183 @@
+{
+    "Header": {
+        "MainHeader": {
+            "tag": "h1",
+            "innerHTML": "Mike Bidinger"
+        }
+    },
+    "Content": {
+        "Sideview": {
+            "tag": "div",
+            "MyPhoto": {
+                "tag": "img",
+                "src": "ttps://github.com/MikeBidinger/Resume/blob/main/img/PhotoMe.jpg?raw=true",
+                "alt": "My Photo"
+            },
+            "Personal": {
+                "tag": "div",
+                "PersonalHeader": {
+                    "tag": "h3",
+                    "innerHTML": "Personalia"
+                },
+                "Location": {
+                    "tag": "div",
+                    "LocationIconLink": {
+                        "tag": "a",
+                        "href": "https://www.google.com/maps/place/Burgemeester+Luytenstraat+12,+6151+GG+Munstergeleen/",
+                        "target": "_blank",
+                        "LocationIcon": {
+                            "tag": "i",
+                            "class": "material-icons",
+                            "innerHTML": "location_on"
+                        }
+                    },
+                    "LocationText": {
+                        "tag": "a",
+                        "href": "https://www.google.com/maps/place/Burgemeester+Luytenstraat+12,+6151+GG+Munstergeleen/",
+                        "target": "_blank",
+                        "innerHTML": "Burgermeester Luytenstraat 12<br>6151 GG<br>Munstergeleen"
+                    }
+                },
+                "Mail": {
+                    "tag": "div",
+                    "MailIconLink": {
+                        "tag": "a",
+                        "href": "mailto:mike-bidinger@hotmail.com",
+                        "MailIcon": {
+                            "tag": "i",
+                            "class": "material-icons",
+                            "innerHTML": "mail"
+                        }
+                    },
+                    "MailText": {
+                        "tag": "a",
+                        "href": "mailto:mike-bidinger@hotmail.com",
+                        "innerHTML": "mike-bidinger@hotmail.com"
+                    }
+                },
+                "Phone": {
+                    "tag": "div",
+                    "PhoneIconLink": {
+                        "tag": "a",
+                        "href": "tel://0641094963/",
+                        "PhoneIcon": {
+                            "tag": "i",
+                            "class": "material-icons",
+                            "innerHTML": "call"
+                        }
+                    },
+                    "PhoneText": {
+                        "tag": "a",
+                        "href": "tel://0641094963/",
+                        "innerHTML": "06-41094963"
+                    }
+                },
+                "LinkedIn": {
+                    "tag": "div",
+                    "LinkedInIconLink": {
+                        "tag": "a",
+                        "href": "https://www.linkedin.com/in/mike-bidinger-359906247/",
+                        "target": "_blank",
+                        "LinkeInIcon": {
+                            "tag": "i",
+                            "class": "material-icons",
+                            "innerHTML": "person"
+                        }
+                    },
+                    "LinkedInText": {
+                        "tag": "a",
+                        "href": "https://www.linkedin.com/in/mike-bidinger-359906247/",
+                        "target": "_blank",
+                        "innerHTML": "LinkedIn"
+                    }
+                },
+                "GitHub": {
+                    "tag": "div",
+                    "GitHubIconLink": {
+                        "tag": "a",
+                        "href": "https://github.com/MikeBidinger/",
+                        "GitHubIcon": {
+                            "tag": "i",
+                            "class": "material-icons",
+                            "innerHTML": "code"
+                        }
+                    },
+                    "GitHubText": {
+                        "tag": "a",
+                        "href": "https://github.com/MikeBidinger/",
+                        "innerHTML": "GitHub"
+                    }
+                },
+                "Birthday": {
+                    "tag": "div",
+                    "BirthdayIcon": {
+                        "tag": "i",
+                        "class": "material-icons",
+                        "innerHTML": "calendar_month"
+                    },
+                    "BirthdayText": {
+                        "tag": "span",
+                        "innerHTML": "1990-12-22"
+                    }
+                },
+                "Country": {
+                    "tag": "div",
+                    "CountryIcon": {
+                        "tag": "i",
+                        "class": "material-icons",
+                        "innerHTML": "language"
+                    },
+                    "CountryText": {
+                        "tag": "span",
+                        "innerHTML": "Netherlands"
+                    }
+                }
+            },
+            "Languages": {
+                "tag": "div",
+                "LanguagesHeader": {
+                    "tag": "h3",
+                    "innerHTML": "Languages"
+                }
+            },
+            "Skills": {
+                "tag": "div",
+                "SkillsHeader": {
+                    "tag": "h3",
+                    "innerHTML": "Skills"
+                }
+            }
+        },
+        "MainContent": {
+            "tag": "div",
+            "About": {
+                "tag": "div",
+                "AboutHeader": {
+                    "tag": "h2",
+                    "innerHTML": "About Me"
+                }
+            },
+            "Work": {
+                "tag": "div",
+                "WorkHeader": {
+                    "tag": "h2",
+                    "innerHTML": "Work Experience"
+                }
+            },
+            "Education": {
+                "tag": "div",
+                "EducationHeader": {
+                    "tag": "h2",
+                    "innerHTML": "Education"
+                }
+            },
+            "Cources": {
+                "tag": "div",
+                "CourcesHeader": {
+                    "tag": "h2",
+                    "innerHTML": "Cources"
+                }
+            }
+        }
+    }
+}
