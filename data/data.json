@@ -95,7 +95,7 @@
                     "Lang1Icons": {
                         "tag": "i",
                         "class": "material-icons",
-                        "innerHTML": "radio-button-checked"
+                        "innerHTML": "radio_button_checked"
                     }
                 }
             },
