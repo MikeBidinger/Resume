@@ -10,7 +10,7 @@
             "tag": "div",
             "MyPhoto": {
                 "tag": "img",
-                "src": "ttps://raw.githubusercontent.com/MikeBidinger/Resume/main/img/PhotoMe.jpg",
+                "src": "https://raw.githubusercontent.com/MikeBidinger/Resume/main/img/PhotoMe.jpg",
                 "alt": "My Photo"
             },
             "Personal": {
@@ -158,7 +158,7 @@
                 },
                 "AboutText": {
                     "tag": "p",
-                    "innerHTML": "A true analytical engineer"
+                    "innerHTML": "A true analytical engineer with both configuration data and change management knowledge and experience within a manufacturing environment. With an extensive perseverance, technical insight and both analytical and problem solving capabilities, I'm continuously on the hunt for improvement by pushing the limits personally, technologically and within the organization. Over the years I obtained a large amount of development and programming skills, scripting in particular. This enables me to connect the physical world with data. In addition I'm result-driven, assertive, proactive and always capable of keeping my head cool in stressful situations. Finally my communicational and leadership skills makes me able to connect and cooperate with multiple disciplines."
                 }
             },
             "Work": {
