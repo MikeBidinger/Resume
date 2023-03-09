@@ -82,9 +82,21 @@
             },
             "Languages": {
                 "tag": "div",
-                "LanguagesHeader": {
+                "LangHeader": {
                     "tag": "h3",
                     "innerHTML": "Languages"
+                },
+                "Lang1": {
+                    "tag": "div",
+                    "Lang1Text": {
+                        "tag": "p",
+                        "innerHTML": "NL"
+                    },
+                    "Lang1Icons": {
+                        "tag": "i",
+                        "class": "material-icons",
+                        "innerHTML": "radio-button-checked"
+                    }
                 }
             },
             "Skills": {
@@ -188,7 +200,7 @@
                         "innerHTML": "Bachelor (HBO) Electrical Engineering"
                     },
                     "Edu1Text": {
-                        "tag": "p",
+                        "tag": "h5",
                         "innerHTML": "2008 - 2012, Hogeschool Zuyd, Heerlen, Graduated: Yes/<span>No</span>"
                     }
                 }
