@@ -134,6 +134,258 @@
                 "SkillsHeader": {
                     "tag": "h3",
                     "innerHTML": "Skills"
+                },
+                "Skill1": {
+                    "tag": "div",
+                    "Skill1Text": {
+                        "tag": "p",
+                        "innerHTML": "Python"
+                    },
+                    "Skill1Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 4
+                        }
+                    }
+                },
+                "Skill2": {
+                    "tag": "div",
+                    "Skill2Text": {
+                        "tag": "p",
+                        "innerHTML": "Qlik Sense"
+                    },
+                    "Skill2Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 4
+                        }
+                    }
+                },
+                "Skill3": {
+                    "tag": "div",
+                    "Skill3Text": {
+                        "tag": "p",
+                        "innerHTML": "MS VBA"
+                    },
+                    "Skill3Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 4
+                        }
+                    }
+                },
+                "Skill4": {
+                    "tag": "div",
+                    "Skill4Text": {
+                        "tag": "p",
+                        "innerHTML": "MS Office"
+                    },
+                    "Skill4Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 4
+                        }
+                    }
+                },
+                "Skill5": {
+                    "tag": "div",
+                    "Skill5Text": {
+                        "tag": "p",
+                        "innerHTML": "HTML"
+                    },
+                    "Skill5Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill6": {
+                    "tag": "div",
+                    "Skill6Text": {
+                        "tag": "p",
+                        "innerHTML": "CSS"
+                    },
+                    "Skill6Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill7": {
+                    "tag": "div",
+                    "Skill7Text": {
+                        "tag": "p",
+                        "innerHTML": "JavaScript"
+                    },
+                    "Skill7Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill8": {
+                    "tag": "div",
+                    "Skill8Text": {
+                        "tag": "p",
+                        "innerHTML": "MongoDB"
+                    },
+                    "Skill8Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill9": {
+                    "tag": "div",
+                    "Skill9Text": {
+                        "tag": "p",
+                        "innerHTML": "Mendix"
+                    },
+                    "Skill9Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill10": {
+                    "tag": "div",
+                    "Skill10Text": {
+                        "tag": "p",
+                        "innerHTML": "VBScripting"
+                    },
+                    "Skill10Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill11": {
+                    "tag": "div",
+                    "Skill11Text": {
+                        "tag": "p",
+                        "innerHTML": "Viscom"
+                    },
+                    "Skill11Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill12": {
+                    "tag": "div",
+                    "Skill12Text": {
+                        "tag": "p",
+                        "innerHTML": "EDIABAS"
+                    },
+                    "Skill12Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
+                    }
+                },
+                "Skill13": {
+                    "tag": "div",
+                    "Skill13Text": {
+                        "tag": "p",
+                        "innerHTML": "SQL"
+                    },
+                    "Skill13Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 2
+                        }
+                    }
+                },
+                "Skill14": {
+                    "tag": "div",
+                    "Skill14Text": {
+                        "tag": "p",
+                        "innerHTML": "MS Visual C++"
+                    },
+                    "Skill14Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 2
+                        }
+                    }
+                },
+                "Skill15": {
+                    "tag": "div",
+                    "Skill15Text": {
+                        "tag": "p",
+                        "innerHTML": "MS Visual Basic"
+                    },
+                    "Skill15Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 2
+                        }
+                    }
+                },
+                "Skill16": {
+                    "tag": "div",
+                    "Skill16Text": {
+                        "tag": "p",
+                        "innerHTML": "MS Visual C#"
+                    },
+                    "Skill16Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 2
+                        }
+                    }
+                },
+                "Skill17": {
+                    "tag": "div",
+                    "Skill17Text": {
+                        "tag": "p",
+                        "innerHTML": "SAP"
+                    },
+                    "Skill17Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 2
+                        }
+                    }
+                },
+                "Skill18": {
+                    "tag": "div",
+                    "Skill18Text": {
+                        "tag": "p",
+                        "innerHTML": "LabView"
+                    },
+                    "Skill18Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 1
+                        }
+                    }
                 }
             }
         },
