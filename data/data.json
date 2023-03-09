@@ -113,6 +113,21 @@
                 "WorkHeader": {
                     "tag": "h2",
                     "innerHTML": "Work Experience"
+                },
+                "Work1": {
+                    "tag": "div",
+                    "Work1Header": {
+                        "tag": "h4",
+                        "innerHTML": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017"
+                    },
+                    "Work1Title": {
+                        "tag": "h5",
+                        "innerHTML": "Work Preparator, Test Engineer (SMD Assembly)"
+                    },
+                    "Work1Desc": {
+                        "tag": "p",
+                        "innerHTML": "Responsible for the quality checks through visual test equipment and programming as well as optimizing the SMD production processes through problem analysis (quality and efficiency improvements). In addition, responsible as a work preparator to ensure a high quality and efficiency standard to the start of production for the SMD production processes of new products."
+                    }
                 }
             },
             "Education": {
