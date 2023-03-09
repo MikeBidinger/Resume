@@ -92,9 +92,12 @@
                         "tag": "p",
                         "innerHTML": "NL"
                     },
-                    "rating": {
-                        "amount": 5,
-                        "score": 3
+                    "Lang1Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 3
+                        }
                     }
                 }
             },
