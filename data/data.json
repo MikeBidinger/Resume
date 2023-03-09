@@ -96,7 +96,35 @@
                         "tag": "div",
                         "rating": {
                             "amount": 5,
-                            "score": 3
+                            "score": 5
+                        }
+                    }
+                },
+                "Lang2": {
+                    "tag": "div",
+                    "Lang2Text": {
+                        "tag": "p",
+                        "innerHTML": "EN"
+                    },
+                    "Lang2Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 4
+                        }
+                    }
+                },
+                "Lang3": {
+                    "tag": "div",
+                    "Lang3Text": {
+                        "tag": "p",
+                        "innerHTML": "DE"
+                    },
+                    "Lang3Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 4
                         }
                     }
                 }
