@@ -153,6 +153,13 @@
                 "CourcesHeader": {
                     "tag": "h2",
                     "innerHTML": "Cources"
+                },
+                "Course1": {
+                    "tag": "div",
+                    "Course1Title": {
+                        "tag": "p",
+                        "innerHTML": "2012 - Viscom Basic Training"
+                    }
                 }
             }
         }
