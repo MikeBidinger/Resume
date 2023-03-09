@@ -114,6 +114,51 @@
                     "tag": "h2",
                     "innerHTML": "Work Experience"
                 },
+                "Work4": {
+                    "tag": "div",
+                    "Work4Header": {
+                        "tag": "h4",
+                        "innerHTML": "VDL Nedcar, Born, Feb 2018 - present"
+                    },
+                    "Work4Title": {
+                        "tag": "h5",
+                        "innerHTML": "BDQS - Product Data Quality Manager (Launch and Change Control, Supply)"
+                    },
+                    "Work4Desc": {
+                        "tag": "p",
+                        "innerHTML": "Product data management specialist and responsible for the product data quality. Managing and developing automation processes for efficiency and quality of product related data (back-end). In addition, also responsible for providing the business with accurate information by transforming data into information to enable data-driven decision making (front-end)."
+                    }
+                },
+                "Work3": {
+                    "tag": "div",
+                    "Work3Header": {
+                        "tag": "h4",
+                        "innerHTML": "VDL Nedcar, Born, Dec 2017 - Feb 2018"
+                    },
+                    "Work3Title": {
+                        "tag": "h5",
+                        "innerHTML": "Change Controller E/E (Launch and Change Control, Supply)"
+                    },
+                    "Work3Desc": {
+                        "tag": "p",
+                        "innerHTML": "Responsible for the validation, implementation and processing of engineering changes to the product(s). In addition, a hardware/software implementation specialist."
+                    }
+                },
+                "Work2": {
+                    "tag": "div",
+                    "Work2Header": {
+                        "tag": "h4",
+                        "innerHTML": "VDL Nedcar, Born, Jan 2017 - dec 2017"
+                    },
+                    "Work2Title": {
+                        "tag": "h5",
+                        "innerHTML": "SQA Line Complaints E/E (Supplier Quality Assurance)"
+                    },
+                    "Work2Desc": {
+                        "tag": "p",
+                        "innerHTML": "Production disruption support through product quality issues. When by analysis is determined that the is supplier related, complaint costs to the relevant supplier. In addition, responsible for updating software components as a result of engineering changes to the product(s), as well as providing support to the “Rework and Repair” department with the product defect analysis of software components."
+                    }
+                },
                 "Work1": {
                     "tag": "div",
                     "Work1Header": {
@@ -153,6 +198,34 @@
                 "CourcesHeader": {
                     "tag": "h2",
                     "innerHTML": "Cources"
+                },
+                "Course5": {
+                    "tag": "div",
+                    "Course5Title": {
+                        "tag": "p",
+                        "innerHTML": "2022 - Qlik Sense Developer"
+                    }
+                },
+                "Course4": {
+                    "tag": "div",
+                    "Course4Title": {
+                        "tag": "p",
+                        "innerHTML": "2020 - Qlik Sense Front End Developer"
+                    }
+                },
+                "Course3": {
+                    "tag": "div",
+                    "Course3Title": {
+                        "tag": "p",
+                        "innerHTML": "2019 - Mendix Rapid Developer"
+                    }
+                },
+                "Course2": {
+                    "tag": "div",
+                    "Course2Title": {
+                        "tag": "p",
+                        "innerHTML": "2016 - Viscom Release Training"
+                    }
                 },
                 "Course1": {
                     "tag": "div",
