@@ -92,10 +92,9 @@
                         "tag": "p",
                         "innerHTML": "NL"
                     },
-                    "Lang1Icons": {
-                        "tag": "i",
-                        "class": "material-icons",
-                        "innerHTML": "radio_button_checked"
+                    "rating": {
+                        "amount": 5,
+                        "score": 3
                     }
                 }
             },
