@@ -482,7 +482,7 @@
                         "innerHTML": "Bachelor (HBO) Electrical Engineering"
                     },
                     "Edu1Text": {
-                        "tag": "h5",
+                        "tag": "p",
                         "innerHTML": "2008 - 2012, Hogeschool Zuyd, Heerlen, Graduated: Yes/<span>No</span>"
                     }
                 }
