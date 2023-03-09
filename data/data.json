@@ -19,59 +19,6 @@
                     "tag": "h3",
                     "innerHTML": "Personalia"
                 },
-                "Location": {
-                    "tag": "div",
-                    "LocationIconLink": {
-                        "tag": "a",
-                        "href": "https://www.google.com/maps/place/Burgemeester+Luytenstraat+12,+6151+GG+Munstergeleen/",
-                        "target": "_blank",
-                        "LocationIcon": {
-                            "tag": "i",
-                            "class": "material-icons",
-                            "innerHTML": "location_on"
-                        }
-                    },
-                    "LocationText": {
-                        "tag": "a",
-                        "href": "https://www.google.com/maps/place/Burgemeester+Luytenstraat+12,+6151+GG+Munstergeleen/",
-                        "target": "_blank",
-                        "innerHTML": "Burgermeester Luytenstraat 12<br>6151 GG<br>Munstergeleen"
-                    }
-                },
-                "Mail": {
-                    "tag": "div",
-                    "MailIconLink": {
-                        "tag": "a",
-                        "href": "mailto:mike-bidinger@hotmail.com",
-                        "MailIcon": {
-                            "tag": "i",
-                            "class": "material-icons",
-                            "innerHTML": "mail"
-                        }
-                    },
-                    "MailText": {
-                        "tag": "a",
-                        "href": "mailto:mike-bidinger@hotmail.com",
-                        "innerHTML": "mike-bidinger@hotmail.com"
-                    }
-                },
-                "Phone": {
-                    "tag": "div",
-                    "PhoneIconLink": {
-                        "tag": "a",
-                        "href": "tel://0641094963/",
-                        "PhoneIcon": {
-                            "tag": "i",
-                            "class": "material-icons",
-                            "innerHTML": "call"
-                        }
-                    },
-                    "PhoneText": {
-                        "tag": "a",
-                        "href": "tel://0641094963/",
-                        "innerHTML": "06-41094963"
-                    }
-                },
                 "LinkedIn": {
                     "tag": "div",
                     "LinkedInIconLink": {
