@@ -17,7 +17,11 @@
                 "tag": "div",
                 "PersonalHeader": {
                     "tag": "h3",
-                    "innerHTML": "Personalia"
+                    "innerHTML": {
+                        "EN": "Personalia",
+                        "NL": "Personalia",
+                        "DE": "Personalia"
+                    }
                 },
                 "LinkedIn": {
                     "tag": "div",
@@ -76,7 +80,11 @@
                     },
                     "CountryText": {
                         "tag": "span",
-                        "innerHTML": "Netherlands"
+                        "innerHTML": {
+                            "EN": "Netherlands",
+                            "NL": "Nederland",
+                            "DE": "Niederlande"
+                        }
                     }
                 }
             },
@@ -84,7 +92,11 @@
                 "tag": "div",
                 "LangHeader": {
                     "tag": "h3",
-                    "innerHTML": "Languages"
+                    "innerHTML": {
+                        "EN": "Languages",
+                        "NL": "Talen",
+                        "DE": "Sprachen"
+                    }
                 },
                 "Lang1": {
                     "tag": "div",
@@ -133,7 +145,11 @@
                 "tag": "div",
                 "SkillsHeader": {
                     "tag": "h3",
-                    "innerHTML": "Skills"
+                    "innerHTML": {
+                        "EN": "Skills",
+                        "NL": "Vaardigheden",
+                        "DE": "Kompetenzen"
+                    }
                 },
                 "Skill1": {
                     "tag": "div",
@@ -395,77 +411,137 @@
                 "tag": "div",
                 "AboutHeader": {
                     "tag": "h2",
-                    "innerHTML": "About Me"
+                    "innerHTML": {
+                        "EN": "About Me",
+                        "NL": "Over Mij",
+                        "DE": "Über Mich"
+                    }
                 },
                 "AboutText": {
                     "tag": "p",
-                    "innerHTML": "A true analytical engineer with both configuration data and change management knowledge and experience within a manufacturing environment. With an extensive perseverance, technical insight and both analytical and problem solving capabilities, I'm continuously on the hunt for improvement by pushing the limits personally, technologically and within the organization. Over the years I obtained a large amount of development and programming skills, scripting in particular. This enables me to connect the physical world with data. In addition I'm result-driven, assertive, proactive and always capable of keeping my head cool in stressful situations. Finally my communicational and leadership skills makes me able to connect and cooperate with multiple disciplines."
+                    "innerHTML": {
+                        "EN": "A true analytical engineer with both configuration data and change management knowledge and experience within a manufacturing environment. With an extensive perseverance, technical insight and both analytical and problem solving capabilities, I'm continuously on the hunt for improvement by pushing the limits personally, technologically and within the organization. Over the years I obtained a large amount of development and programming skills, scripting in particular. This enables me to connect the physical world with data. In addition I'm result-driven, assertive, proactive and always capable of keeping my head cool in stressful situations. Finally my communicational and leadership skills makes me able to connect and cooperate with multiple disciplines.",
+                        "NL": "",
+                        "DE": ""
+                    }
                 }
             },
             "Work": {
                 "tag": "div",
                 "WorkHeader": {
                     "tag": "h2",
-                    "innerHTML": "Work Experience"
+                    "innerHTML": {
+                        "EN": "Work Experience",
+                        "NL": "Werkervaring",
+                        "DE": "Berufderfahrung"
+                    }
                 },
                 "Work4": {
                     "tag": "div",
                     "Work4Header": {
                         "tag": "h4",
-                        "innerHTML": "VDL Nedcar, Born, Feb 2018 - present"
+                        "innerHTML": {
+                            "EN": "VDL Nedcar, Born, Feb 2018 - present",
+                            "NL": "VDL Nedcar, Born, feb 2018 - heden",
+                            "DE": "VDL Nedcar, Born, Feb 2018 - present"
+                        }
                     },
                     "Work4Title": {
                         "tag": "h5",
-                        "innerHTML": "BDQS - Product Data Quality Manager (Launch and Change Control, Supply)"
+                        "innerHTML": {
+                            "EN": "BDQS - Product Data Quality Manager (Launch and Change Control, Supply)",
+                            "NL": "BDQS - Productdata Kwaliteitsmanager (Launch and Change Control, Supply)",
+                            "DE": "BDQS - Produktdatenqualitätsmanager (Launch and Change Control, Supply)"
+                        }
                     },
                     "Work4Desc": {
                         "tag": "p",
-                        "innerHTML": "Product data management specialist and responsible for the product data quality. Managing and developing automation processes for efficiency and quality of product related data (back-end). In addition, also responsible for providing the business with accurate information by transforming data into information to enable data-driven decision making (front-end)."
+                        "innerHTML": {
+                            "EN": "Product data management specialist and responsible for the product data quality. Managing and developing automation processes for efficiency and quality of product related data (back-end). In addition, also responsible for providing the business with accurate information by transforming data into information to enable data-driven decision making (front-end).",
+                            "NL": "",
+                            "DE": ""
+                        }
                     }
                 },
                 "Work3": {
                     "tag": "div",
                     "Work3Header": {
                         "tag": "h4",
-                        "innerHTML": "VDL Nedcar, Born, Dec 2017 - Feb 2018"
+                        "innerHTML": {
+                            "EN": "VDL Nedcar, Born, Dec 2017 - Feb 2018",
+                            "NL": "VDL Nedcar, Born, dec 2017 - feb 2018",
+                            "DE": "VDL Nedcar, Born, Dez 2017 - Feb 2018"
+                        }
                     },
                     "Work3Title": {
                         "tag": "h5",
-                        "innerHTML": "Change Controller E/E (Launch and Change Control, Supply)"
+                        "innerHTML": {
+                            "EN": "Change Controller E/E (Launch and Change Control, Supply)",
+                            "NL": "Wijzigings Coördinator E/E (Launch and Change Control, Supply)",
+                            "DE": "Einsatz Änderung Steuerer E/E (Launch and Change Control, Supply)"
+                        }
                     },
                     "Work3Desc": {
                         "tag": "p",
-                        "innerHTML": "Responsible for the validation, implementation and processing of engineering changes to the product(s). In addition, a hardware/software implementation specialist."
+                        "innerHTML": {
+                            "EN": "Responsible for the validation, implementation and processing of engineering changes to the product(s). In addition, a hardware/software implementation specialist.",
+                            "NL": "",
+                            "DE": ""
+                        }
                     }
                 },
                 "Work2": {
                     "tag": "div",
                     "Work2Header": {
                         "tag": "h4",
-                        "innerHTML": "VDL Nedcar, Born, Jan 2017 - dec 2017"
+                        "innerHTML": {
+                            "EN": "VDL Nedcar, Born, Jan 2017 - Dec 2017",
+                            "NL": "VDL Nedcar, Born, jan 2017 - dec 2017",
+                            "DE": "VDL Nedcar, Born, Jan 2017 - Dez 2017"
+                        }
                     },
                     "Work2Title": {
                         "tag": "h5",
-                        "innerHTML": "SQA Line Complaints E/E (Supplier Quality Assurance)"
+                        "innerHTML": {
+                            "EN": "SQA Line Complaints E/E (Supplier Quality Assurance)",
+                            "NL": "SQA Line Complaints E/E (Supplier Quality Assurance)",
+                            "DE": "SQA Line Complaints E/E (Lieferanten-Qualitätssicherung)"
+                        }
                     },
                     "Work2Desc": {
                         "tag": "p",
-                        "innerHTML": "Production disruption support through product quality issues. When by analysis is determined that the is supplier related, complaint costs to the relevant supplier. In addition, responsible for updating software components as a result of engineering changes to the product(s), as well as providing support to the “Rework and Repair” department with the product defect analysis of software components."
+                        "innerHTML": {
+                            "EN": "Production disruption support through product quality issues. When by analysis is determined that the is supplier related, complaint costs to the relevant supplier. In addition, responsible for updating software components as a result of engineering changes to the product(s), as well as providing support to the “Rework and Repair” department with the product defect analysis of software components.",
+                            "NL": "",
+                            "DE": ""
+                        }
                     }
                 },
                 "Work1": {
                     "tag": "div",
                     "Work1Header": {
                         "tag": "h4",
-                        "innerHTML": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017"
+                        "innerHTML": {
+                            "EN": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017",
+                            "NL": "Prodrive Technologies, Son, Science Park Eindhoven, aug 2012 - jan 2017",
+                            "DE": "Prodrive Technologies, Son, Science Park Eindhoven, Aug 2012 - Jan 2017"
+                        }
                     },
                     "Work1Title": {
                         "tag": "h5",
-                        "innerHTML": "Work Preparator, Test Engineer (SMD Assembly)"
+                        "innerHTML": {
+                            "EN": "Work Preparator, Test Engineer (SMD Assembly)",
+                            "NL": "Werkvoorbereider, Test Engineer (SMD Assemblage)",
+                            "DE": "Arbeitsvorbereitung, Testingenieur (SMD Montage)"
+                        }
                     },
                     "Work1Desc": {
                         "tag": "p",
-                        "innerHTML": "Responsible for the quality checks through visual test equipment and programming as well as optimizing the SMD production processes through problem analysis (quality and efficiency improvements). In addition, responsible as a work preparator to ensure a high quality and efficiency standard to the start of production for the SMD production processes of new products."
+                        "innerHTML": {
+                            "EN": "Responsible for the quality checks through visual test equipment and programming as well as optimizing the SMD production processes through problem analysis (quality and efficiency improvements). In addition, responsible as a work preparator to ensure a high quality and efficiency standard to the start of production for the SMD production processes of new products.",
+                            "NL": "",
+                            "DE": ""
+                        }
                     }
                 }
             },
@@ -473,7 +549,11 @@
                 "tag": "div",
                 "EduHeader": {
                     "tag": "h2",
-                    "innerHTML": "Education"
+                    "innerHTML": {
+                        "EN": "Education",
+                        "NL": "Opleiding",
+                        "DE": "Schulbildung"
+                    }
                 },
                 "Edu1": {
                     "tag": "div",
@@ -483,7 +563,11 @@
                     },
                     "Edu1Text": {
                         "tag": "p",
-                        "innerHTML": "2008 - 2012, Hogeschool Zuyd, Heerlen, Graduated: Yes/<span>No</span>"
+                        "innerHTML": {
+                            "EN": "2008 - 2012, Hogeschool Zuyd, Heerlen, Graduated: Yes/<span>No</span>",
+                            "NL": "2008 - 2012, Hogeschool Zuyd, Heerlen, Geslaagd: Ja/<span>Nee</span>",
+                            "DE": "2008 - 2012, Hogeschool Zuyd, Heerlen, Graduiert: Ja/<span>Nein</span>"
+                        }
                     }
                 }
             },
@@ -491,7 +575,11 @@
                 "tag": "div",
                 "CourcesHeader": {
                     "tag": "h2",
-                    "innerHTML": "Cources"
+                    "innerHTML": {
+                        "EN": "Courses",
+                        "NL": "Cursussen",
+                        "DE": "Kurse"
+                    }
                 },
                 "Course5": {
                     "tag": "div",
@@ -529,6 +617,12 @@
                     }
                 }
             }
+        }
+    },
+    "Footer": {
+        "FooterHeader": {
+            "tag": "h2",
+            "innerHTML": "Contact"
         }
     }
 }
