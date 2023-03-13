@@ -571,9 +571,9 @@
                     }
                 }
             },
-            "Cources": {
+            "Courses": {
                 "tag": "div",
-                "CourcesHeader": {
+                "CoursesHeader": {
                     "tag": "h2",
                     "innerHTML": {
                         "EN": "Courses",
