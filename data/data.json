@@ -47,6 +47,7 @@
                     "GitHubIconLink": {
                         "tag": "a",
                         "href": "https://github.com/MikeBidinger/",
+                        "target": "_blank",
                         "GitHubIcon": {
                             "tag": "i",
                             "class": "material-icons",
@@ -56,6 +57,7 @@
                     "GitHubText": {
                         "tag": "a",
                         "href": "https://github.com/MikeBidinger/",
+                        "target": "_blank",
                         "innerHTML": "GitHub"
                     }
                 },
