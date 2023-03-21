@@ -185,7 +185,7 @@
                     "tag": "div",
                     "Skill3Text": {
                         "tag": "p",
-                        "innerHTML": "MS VBA"
+                        "innerHTML": "DataIKU"
                     },
                     "Skill3Rating": {
                         "tag": "div",
@@ -199,7 +199,7 @@
                     "tag": "div",
                     "Skill4Text": {
                         "tag": "p",
-                        "innerHTML": "MS Office"
+                        "innerHTML": "MS VBA"
                     },
                     "Skill4Rating": {
                         "tag": "div",
@@ -213,13 +213,13 @@
                     "tag": "div",
                     "Skill5Text": {
                         "tag": "p",
-                        "innerHTML": "HTML"
+                        "innerHTML": "MS Office"
                     },
                     "Skill5Rating": {
                         "tag": "div",
                         "rating": {
                             "amount": 5,
-                            "score": 3
+                            "score": 4
                         }
                     }
                 },
@@ -227,7 +227,7 @@
                     "tag": "div",
                     "Skill6Text": {
                         "tag": "p",
-                        "innerHTML": "CSS"
+                        "innerHTML": "HTML"
                     },
                     "Skill6Rating": {
                         "tag": "div",
@@ -241,7 +241,7 @@
                     "tag": "div",
                     "Skill7Text": {
                         "tag": "p",
-                        "innerHTML": "JavaScript"
+                        "innerHTML": "CSS"
                     },
                     "Skill7Rating": {
                         "tag": "div",
@@ -255,7 +255,7 @@
                     "tag": "div",
                     "Skill8Text": {
                         "tag": "p",
-                        "innerHTML": "MongoDB"
+                        "innerHTML": "JavaScript"
                     },
                     "Skill8Rating": {
                         "tag": "div",
@@ -269,7 +269,7 @@
                     "tag": "div",
                     "Skill9Text": {
                         "tag": "p",
-                        "innerHTML": "Mendix"
+                        "innerHTML": "MongoDB"
                     },
                     "Skill9Rating": {
                         "tag": "div",
@@ -283,7 +283,7 @@
                     "tag": "div",
                     "Skill10Text": {
                         "tag": "p",
-                        "innerHTML": "VBScripting"
+                        "innerHTML": "Mendix"
                     },
                     "Skill10Rating": {
                         "tag": "div",
@@ -297,7 +297,7 @@
                     "tag": "div",
                     "Skill11Text": {
                         "tag": "p",
-                        "innerHTML": "Viscom"
+                        "innerHTML": "VBScripting"
                     },
                     "Skill11Rating": {
                         "tag": "div",
@@ -311,7 +311,7 @@
                     "tag": "div",
                     "Skill12Text": {
                         "tag": "p",
-                        "innerHTML": "EDIABAS"
+                        "innerHTML": "Viscom"
                     },
                     "Skill12Rating": {
                         "tag": "div",
@@ -325,13 +325,13 @@
                     "tag": "div",
                     "Skill13Text": {
                         "tag": "p",
-                        "innerHTML": "SQL"
+                        "innerHTML": "EDIABAS"
                     },
                     "Skill13Rating": {
                         "tag": "div",
                         "rating": {
                             "amount": 5,
-                            "score": 2
+                            "score": 3
                         }
                     }
                 },
@@ -339,7 +339,7 @@
                     "tag": "div",
                     "Skill14Text": {
                         "tag": "p",
-                        "innerHTML": "MS Visual C++"
+                        "innerHTML": "SQL"
                     },
                     "Skill14Rating": {
                         "tag": "div",
@@ -353,7 +353,7 @@
                     "tag": "div",
                     "Skill15Text": {
                         "tag": "p",
-                        "innerHTML": "MS Visual Basic"
+                        "innerHTML": "MS Visual C++"
                     },
                     "Skill15Rating": {
                         "tag": "div",
@@ -367,7 +367,7 @@
                     "tag": "div",
                     "Skill16Text": {
                         "tag": "p",
-                        "innerHTML": "MS Visual C#"
+                        "innerHTML": "MS Visual Basic"
                     },
                     "Skill16Rating": {
                         "tag": "div",
@@ -381,7 +381,7 @@
                     "tag": "div",
                     "Skill17Text": {
                         "tag": "p",
-                        "innerHTML": "SAP"
+                        "innerHTML": "MS Visual C#"
                     },
                     "Skill17Rating": {
                         "tag": "div",
@@ -395,9 +395,23 @@
                     "tag": "div",
                     "Skill18Text": {
                         "tag": "p",
-                        "innerHTML": "LabView"
+                        "innerHTML": "SAP"
                     },
                     "Skill18Rating": {
+                        "tag": "div",
+                        "rating": {
+                            "amount": 5,
+                            "score": 2
+                        }
+                    }
+                },
+                "Skill19": {
+                    "tag": "div",
+                    "Skill19Text": {
+                        "tag": "p",
+                        "innerHTML": "LabView"
+                    },
+                    "Skill19Rating": {
                         "tag": "div",
                         "rating": {
                             "amount": 5,
