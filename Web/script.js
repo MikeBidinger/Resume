@@ -19,7 +19,7 @@ let myData = {};
 
 window.onload = function () {
     loadData(
-        "https://raw.githubusercontent.com/MikeBidinger/Resume/07413697a772ebb87ee8b356609d3f69ded48c30/data/data.json"
+        "https://raw.githubusercontent.com/MikeBidinger/Resume/8072ae76bf2861354395ebfa553cde0fad4fa71d/data/data.json"
     );
 };
 
