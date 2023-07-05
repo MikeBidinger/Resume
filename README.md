@@ -1,6 +1,6 @@
 ## Resume
 
-### My resume as a PDF and HTML
+### My resume as a PDF and HTML (multi-language)
 
 For seperate HTML, CSS and JS files, see:
 
