@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Resume of Mike Bidinger</title>
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8" />
+        <title id="Title">Resume of Mike Bidinger</title>
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -23,31 +23,40 @@
                 font-family: Arial, Helvetica, sans-serif;
                 color: var(--white);
             }
-            a {
-                color: var(--white);
-            }
-            a:hover {
-                color: var(--green);
-            }
-            a i:hover {
-                color: inherit;
-            }
             p {
                 color: var(--text);
+            }
+            a {
+                color: var(--white);
+                text-decoration: none;
+            }
+            .icon {
+                height: 30px;
+                margin-right: 5px;
+                border-radius: 6px;
+            }
+            #Footer .icon {
+                background-color: var(--text);
+                border-radius: 0;
+            }
+            div div div div:hover .icon,
+            div div div a:hover .icon,
+            #Footer a:hover .icon {
+                background-color: var(--green);
             }
             #Header {
                 font-size: 40px;
                 text-align: center;
                 color: white;
             }
-            #Header h1 {
+            #MainHeader {
                 text-shadow: 1px 1px 2px black, 0 0 50px var(--green);
             }
             #Nav,
-            #Nav div {
+            #Dropdown {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-between;
                 position: sticky;
                 top: 0;
                 border-bottom: 1px solid var(--green);
@@ -59,7 +68,6 @@
             }
             #Nav a {
                 padding: 10px 10px;
-                text-decoration: none;
             }
             #Nav a:hover {
                 background: var(--green);
@@ -91,8 +99,8 @@
                 top: 38px;
             }
             #Dropdown #DropButtons button {
-                margin: 0 5px 5px;
-                width: 85px;
+                margin: 5px;
+                width: 86px;
                 height: 40px;
                 border: 1px solid var(--gray);
                 border-radius: 5px;
@@ -107,6 +115,9 @@
             #Dropdown #DropButtons button:active {
                 background-color: var(--text);
                 color: var(--dark);
+            }
+            #MyPhoto {
+                border-radius: 15px;
             }
             #Content {
                 display: flex;
@@ -135,9 +146,6 @@
             #Content div div div {
                 border-radius: 0;
             }
-            #Content img {
-                border-radius: 15px;
-            }
             #Sideview {
                 display: flex;
                 flex-direction: column;
@@ -148,49 +156,81 @@
             #Sideview h3 {
                 border-bottom: 1px solid var(--green);
             }
+            #Sideview p {
+                margin: 0;
+            }
             #Sideview div {
                 padding: 10px;
                 background: var(--gray);
             }
-            #Sideview div div {
-                margin: 0 0 10px 0;
+            #Sideview div div,
+            #Sideview div a {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
                 padding: 0;
             }
-            #Sideview #Personal div {
-                display: flex;
-                align-items: center;
-            }
-            #Sideview #Personal i {
-                margin-right: 5px;
-            }
-            #Sideview #Personal img {
-                margin-right: 5px;
-                height: 20px;
-                border-radius: 0;
-            }
-            #Sideview #Personal a,
-            #Sideview #Personal span {
-                white-space: nowrap;
-            }
-            #Sideview #Languages div,
-            #Sideview #Skills div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            #Sideview #Languages div p,
-            #Sideview #Skills div p {
-                margin: 0 5px 0 0;
-                white-space: nowrap;
-            }
-            #Sideview #Languages div div,
-            #Sideview #Skills div div {
+            #Sideview div a a {
                 margin: 0;
             }
-            #Sideview div div:hover {
+            #Sideview div div p,
+            #Sideview div a a {
+                margin: 0 5px 0 0;
+            }
+            #Sideview div div div,
+            #Sideview div a div {
+                margin: 0;
+                margin-left: auto;
+                margin-right: 0;
+            }
+            #Sideview div div:hover,
+            #Sideview div div:hover p,
+            #Sideview div a:hover,
+            #Sideview div a:hover a {
+                position: relative;
                 color: white;
                 cursor: default;
                 text-shadow: 1px 1px 2px black, 0 0 15px var(--green);
+            }
+            #Sideview div a:hover {
+                cursor: pointer;
+            }
+            #Sideview div a:hover a {
+                text-decoration: underline;
+                text-decoration-color: var(--green);
+            }
+            #Sideview div a a:hover {
+                color: var(--green);
+                cursor: pointer;
+            }
+            #Sideview div a div:hover {
+                cursor: pointer;
+            }
+            #Sideview div div .tooltip,
+            #Sideview div a .tooltip {
+                visibility: hidden;
+                background: var(--green);
+                text-align: center;
+                border-radius: 5px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                top: 120%;
+            }
+            #Sideview div div .tooltip::after,
+            #Sideview div a .tooltip::after {
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                left: 15px;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent transparent var(--green) transparent;
+            }
+            #Sideview div div:hover .tooltip,
+            #Sideview div a:hover .tooltip {
+                visibility: visible;
             }
             #MainContent {
                 display: flex;
@@ -219,24 +259,35 @@
             #MainContent h5 {
                 margin-left: 10px;
             }
-            #MainContent #Work div {
+            #Work div,
+            #Education div {
                 border-top: 1px solid var(--green);
                 padding: 0;
             }
-            #MainContent #Education p span {
+            #Education p span {
                 text-decoration: line-through;
             }
             #Footer {
                 text-align: center;
             }
-            #Footer div {
+            #Footer a {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
+                margin-bottom: 10px;
+                padding: 0;
             }
-            #Footer div div a i {
-                margin-right: 10px;
+            #Footer a a {
+                margin: 0;
+            }
+            #Footer a:hover a {
+                color: white;
+                text-shadow: 1px 1px 2px black, 0 0 15px var(--green);
+                text-decoration: underline;
+                text-decoration-color: var(--green);
+            }
+            #Footer a a:hover {
+                color: var(--green);
             }
             @media only screen and (min-width: 600px) {
                 #Nav #LinkPersonal,
@@ -272,116 +323,188 @@
         </style>
     </head>
     <body>
-        <div id="Header"></div>
+        <div id="Header">
+            <h1 id="MainHeader"></h1>
+        </div>
 
         <div id="Nav"></div>
 
-        <div id="Content"></div>
+        <div id="Content">
+            <div id="Sideview">
+                <img id="MyPhoto" />
+                <div id="Personal">
+                    <h3 id="PersonalHeader"></h3>
+                </div>
+                <div id="Languages">
+                    <h3 id="LangHeader"></h3>
+                </div>
+                <div id="Skills">
+                    <h3 id="SkillsHeader"></h3>
+                </div>
+            </div>
+            <div id="MainContent">
+                <div id="About">
+                    <h2 id="AboutHeader"></h2>
+                    <p id="AboutText"></p>
+                </div>
+                <div id="Work">
+                    <h2 id="WorkHeader"></h2>
+                </div>
+                <div id="Education">
+                    <h2 id="EduHeader"></h2>
+                </div>
+                <div id="Courses">
+                    <h2 id="CourseHeader"></h2>
+                </div>
+            </div>
+        </div>
 
-        <div id="Footer"></div>
+        <div id="Footer">
+            <h2 id="FootHeader"></h2>
+        </div>
 
         <script>
-            "use strict";
-            const TAGS = [
-                "h1",
-                "h2",
-                "h3",
-                "h4",
-                "h5",
-                "div",
-                "p",
-                "span",
-                "img",
-                "a",
-                "i",
-                "button",
-            ];
-            let myData = {};
-            window.onload = function () {
-                loadData(
-                    "https://raw.githubusercontent.com/MikeBidinger/Web_Dev/main/Resume/data/data.json"
-                );
-            };
-            async function loadData(url_addr) {
-                let myDataText = "";
-                // myDataText = JSON.stringify(MYDATA);
-                let myPromise = new Promise(function (resolve, reject) {
-                    const req = new XMLHttpRequest();
-                    req.onload = function () {
-                        if (req.status === 200) {
-                            myDataText = req.responseText;
-                            resolve();
-                        }
-                    };
-                    req.open("GET", url_addr);
-                    req.send();
-                });
-                await myPromise;
-                loadJSONdata("EN", myDataText);
-                createNavigationBar(document.getElementById("Nav"));
-            }
-            function loadJSONdata(lang, dataText) {
-                myData = JSON.parse(dataText);
-                for (let section in myData) {
-                    let parent = document.getElementById(section);
-                    parseData(parent, lang, myData[section]);
+            let myData;
+            let lang = "EN";
+
+            const username = "MikeBidinger";
+            const repository = "Web_Dev";
+            const filePath = "Resume/data/data.json";
+            const imgPath = "Resume/img/";
+            const imgDir = `https://raw.githubusercontent.com/${username}/${repository}/main/${imgPath}`;
+
+            async function loadJSONFromGitHub(username, repository, path) {
+                const url = `https://raw.githubusercontent.com/${username}/${repository}/main/${path}`;
+                try {
+                    const response = await fetch(url);
+                    if (!response.ok) {
+                        throw new Error(
+                            `Failed to fetch JSON. Status: ${response.status}`
+                        );
+                    }
+                    const jsonData = await response.json();
+                    return jsonData;
+                } catch (error) {
+                    console.error(
+                        `Error loading JSON from GitHub: ${error.message}`
+                    );
                 }
             }
-            function parseData(parent, lang, sectionData) {
-                if (typeof sectionData === "object") {
-                    for (let id in sectionData) {
-                        let element = createElement(lang, sectionData[id], id);
-                        parent.appendChild(element);
+
+            window.onload = loadJSONFromGitHub(username, repository, filePath)
+                .then((data) => {
+                    console.log("JSON data loaded successfully:", data);
+                    myData = data;
+                    loadJSONdata(lang);
+                    createNavigationBar(document.getElementById("Nav"));
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+
+            function loadJSONdata() {
+                // Set JSON data to elements
+                for (let el in myData) {
+                    let element = document.getElementById(el);
+                    parseData(element, myData[el]);
+                }
+            }
+
+            function parseData(element, elementData) {
+                // Parse the JSON element data
+                for (let prop in elementData) {
+                    if (prop === "_children") {
+                        // Add children to element
+                        addChildren(element, elementData[prop]);
+                    } else if (typeof elementData[prop] === "object") {
+                        // Set property data (language dependent)
+                        element[prop] = elementData[prop][lang];
+                    } else {
+                        // Set property data (language independent)
+                        if (prop === "src") {
+                            element[prop] = imgDir + elementData[prop];
+                        } else {
+                            element[prop] = elementData[prop];
+                        }
                     }
                 }
             }
-            function createElement(lang, elementData, id) {
-                let element = document.createElement(elementData.tag);
-                element.id = id;
-                addProperties(element, lang, elementData);
+
+            function addChildren(parent, children) {
+                // Add child to parent element
+                for (child in children) {
+                    let element = document.createElement("div");
+                    for (el in children[child]) {
+                        if (el === "link") {
+                            let linkEl = document.createElement("a");
+                            // Copy the children to link element (instead of div element)
+                            while (element.firstChild) {
+                                linkEl.appendChild(element.firstChild);
+                            }
+                            linkEl.href = children[child][el].href;
+                            linkEl.target = children[child][el].target;
+                            // linkEl.classList.add(el);
+                            element = linkEl;
+                        }
+                        element.appendChild(
+                            createChild(el, children[child][el])
+                        );
+                    }
+                    parent.appendChild(element);
+                }
+            }
+
+            function createChild(type, props) {
+                let element;
+                // Create child element
+                if (type === "text") {
+                    // Create text element
+                    element = document.createElement("p");
+                } else if (type === "icon") {
+                    // Create icon element
+                    element = document.createElement("img");
+                    element.src = imgDir + props.src;
+                    element.alt = props.alt;
+                } else if (type === "link") {
+                    element = document.createElement("a");
+                    element.href = props.href;
+                    element.target = props.target;
+                } else if (type === "rating") {
+                    // Create rating element
+                    element = document.createElement("div");
+                    createRating(element, props.amount, props.score);
+                } else if (type === "tooltip") {
+                    // Create tooltip element
+                    element = document.createElement("span");
+                } else if (type === "header") {
+                    element = document.createElement("h4");
+                } else if (type === "title") {
+                    element = document.createElement("h5");
+                } else if (type === "desc") {
+                    element = document.createElement("p");
+                }
+                if (Object.hasOwn(props, "innerHTML")) {
+                    if (typeof props.innerHTML === "object") {
+                        element.id = props.id;
+                        element.innerHTML = props.innerHTML[lang];
+                    } else {
+                        element.innerHTML = props.innerHTML;
+                    }
+                }
+                element.classList.add(type);
                 return element;
             }
-            function addProperties(element, lang, elementData) {
-                if (elementData.tag === undefined) return;
-                for (let x in elementData) {
-                    if (elementData[x].tag !== undefined) {
-                        let child = createElement(lang, elementData[x], x);
-                        element.appendChild(child);
-                    } else if (x === "class") {
-                        element.classList.add(elementData.class);
-                    } else if (x === "innerHTML") {
-                        if (typeof elementData.innerHTML === "object") {
-                            element.innerHTML = elementData.innerHTML[lang];
-                        } else {
-                            element.innerHTML = elementData.innerHTML;
-                        }
-                    } else if (x === "rating") {
-                        createRating(element, elementData.rating);
-                    }
-                    if (element.tagName === "IMG") {
-                        if (x === "src") {
-                            element.src = elementData.src;
-                        } else if (x === "alt") {
-                            element.alt = elementData.alt;
-                        }
-                    } else if (element.tagName === "A") {
-                        if (x === "href") {
-                            element.href = elementData.href;
-                        } else if (x === "target") {
-                            element.target = elementData.target;
-                        }
-                    }
-                }
-            }
-            function createRating(parent, rating) {
-                for (let i = 0; i < rating.amount; i++) {
-                    if (i < rating.amount - rating.score) {
+
+            function createRating(parent, amount, score) {
+                for (let i = 0; i < amount; i++) {
+                    if (i < amount - score) {
                         parent.appendChild(createRateIcon(false));
                     } else {
                         parent.appendChild(createRateIcon(true));
                     }
                 }
             }
+
             function createRateIcon(checked) {
                 let element = document.createElement("i");
                 element.classList.add("rating");
@@ -393,71 +516,89 @@
                 }
                 return element;
             }
-            function setLang(lang) {
-                for (let section in myData) {
-                    setProperties(section, lang, myData[section]);
+
+            function setLang(selection) {
+                // Set language according to selection
+                lang = selection;
+                for (let el in myData) {
+                    setProperties(myData[el]);
                 }
+                // Change navigation bar according to language selection
                 removeNavigationBar(document.getElementById("Nav"));
                 createNavigationBar(document.getElementById("Nav"));
             }
-            function setProperties(parentID, lang, elementData) {
+
+            function setProperties(elementData) {
                 if (typeof elementData === "object") {
-                    if ("innerHTML" in elementData) {
+                    if ("innerHTML" in elementData && "id" in elementData) {
                         if (typeof elementData.innerHTML === "object") {
-                            let element = document.getElementById(parentID);
+                            let element = document.getElementById(
+                                elementData.id
+                            );
                             element.innerHTML = elementData.innerHTML[lang];
                         }
                     }
-                    for (let element in elementData) {
-                        setProperties(element, lang, elementData[element]);
+                    for (let el in elementData) {
+                        setProperties(elementData[el]);
                     }
                 }
             }
+
             function createNavigationBar(navbar) {
+                // Home Link
                 let link = document.createElement("a");
                 link.id = "LinkHome";
                 link.href = "#";
                 link.innerHTML = "Home";
                 navbar.appendChild(link);
+                // Sideview Links
                 let sideElements = document.getElementById("Sideview").children;
                 createLinks(sideElements, navbar);
+                // Main Content Links
                 let mainElements =
                     document.getElementById("MainContent").children;
                 createLinks(mainElements, navbar);
+                // Contact Link
                 link = document.createElement("a");
                 link.id = "LinkFooter";
                 link.href = "#Footer";
                 link.innerHTML = "Contact";
                 navbar.appendChild(link);
+                // Language Selection:
+                // - Dropdown
                 let dropdown = document.createElement("div");
                 dropdown.id = "Dropdown";
+                // - Dropdown Link
                 let dropLink = document.createElement("a");
                 dropLink.id = "DropLink";
                 dropLink.innerHTML = "Language";
+                // - Dropdown Buttons
                 let dropButtons = document.createElement("div");
                 dropButtons.id = "DropButtons";
                 let dropEN = document.createElement("button");
                 dropEN.onclick = function () {
                     setLang("EN");
                 };
-                dropEN.innerHTML = "English";
+                dropEN.innerHTML = `<img src="${imgDir}flag-uk.svg" class="icon" />`;
                 dropButtons.appendChild(dropEN);
                 let dropNL = document.createElement("button");
                 dropNL.onclick = function () {
                     setLang("NL");
                 };
-                dropNL.innerHTML = "Dutch";
+                dropNL.innerHTML = `<img src="${imgDir}flag-nl.svg" class="icon" />`;
                 dropButtons.appendChild(dropNL);
                 let dropDE = document.createElement("button");
                 dropDE.onclick = function () {
                     setLang("DE");
                 };
-                dropDE.innerHTML = "German";
+                dropDE.innerHTML = `<img src="${imgDir}flag-de.svg" class="icon" />`;
                 dropButtons.appendChild(dropDE);
+                // - Add Dropdown to NavBar
                 dropdown.appendChild(dropLink);
                 dropdown.appendChild(dropButtons);
                 navbar.appendChild(dropdown);
             }
+
             function createLinks(elements, parent) {
                 for (let div of elements) {
                     if (div.tagName === "DIV") {
@@ -470,6 +611,7 @@
                     }
                 }
             }
+
             function removeNavigationBar(navbar) {
                 navbar.removeChild(navbar.firstElementChild);
                 let len = navbar.childNodes.length;
